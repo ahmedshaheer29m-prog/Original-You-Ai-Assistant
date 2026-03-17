@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-pulseGlow: pulseGlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px 0 rgba(15, 118, 110, 0.2); }
+    50% { box-shadow: 0 0 25px 8px rgba(15, 118, 110, 0.5); }
+  }
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #D4AF77;
+    border-radius: 10px;
+}
